@@ -7,7 +7,7 @@ import {
 import { auth } from "@/src/lib/firebase/clientApp";
 
 export function onAuthStateChanged(cb) {
-	return _onAuthStateChanged(auth, cb);
+  return _onAuthStateChanged(auth, cb);
 }
 
 export async function signInWithGoogle() {
