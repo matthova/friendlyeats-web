@@ -72,7 +72,7 @@ export default function Header({initialUser}) {
 				<img src="/friendly-eats.svg" alt="FriendlyEats" />
 				Friendly Eats
 			</Link>
-			{user ? (
+			{user != null && !user.isAnonymous ? (
 				<>
 					<div className="profile">
 						<p>
